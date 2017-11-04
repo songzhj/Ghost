@@ -3,22 +3,23 @@
 {{> cover this}}
 
 <section class="wrapper" tabindex="0">
-  <div class="wrapper-container">
-    <header>
-      <p><h2>Posts tagged with <i>{{tag.name}}</i></h2></p>
-      <hr>
-    </header>
+    <div class="wrapper-container">
+        <header>
+            <p>
+            <h2>Posts tagged with <i>{{tag.name}}</i></h2></p>
+            <hr>
+        </header>
 
-    <section class="post-list">
-      {{#foreach posts}}
-        {{> post/list this}}
-      {{/foreach}}
-    </section>
+        <section class="post-list">
+            {{#foreach posts}}
+                {{> post/list this}}
+            {{/foreach}}
+        </section>
 
-    {{#if pagination}}
-      {{pagination}}
-    {{/if}}
+        {{#if pagination}}
+            {{pagination}}
+        {{/if}}
 
-    {{> footer this}}
-  </div>
+        {{> footer this}}
+    </div>
 </section>
